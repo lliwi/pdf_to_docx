@@ -8,7 +8,7 @@ st.title("pdf to docx")
 
 uploaded_file = st.file_uploader("File upload")
 if uploaded_file:
-    with st.spinner('Cargando datos ...'):
+    with st.spinner('converting file ...'):
         temp_dir = tempfile.mkdtemp()
         path = os.path.join(temp_dir, uploaded_file.name)
         docx_path = path.replace('.pdf','.docx')
